@@ -22,6 +22,7 @@ public class Main {
         List<List<Integer>> finallist = Arrays.asList(list1,list2,list3);
         List<Integer> resultList=finallist.stream().flatMap(numCollections->numCollections.stream()).collect(Collectors.toList());
         System.out.println(resultList);
+
 //       add all the 3 collections list1, list2 and list3 to a single collection list and for each element use map to perform a certain operation
         List<Integer> resultList1=finallist.stream().flatMap(numCollections->numCollections.stream().map(num->num+10)).collect(Collectors.toList());
         System.out.println(resultList1);
