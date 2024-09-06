@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/flatmapdemos/flatmapdemos.iml" filepath="$PROJECT_DIR$/flatmapdemos/flatmapdemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java8streams.iml" filepath="$PROJECT_DIR$/.idea/java8streams.iml" />
       <module fileurl="file://$PROJECT_DIR$/mapdemo/mapdemo.iml" filepath="$PROJECT_DIR$/mapdemo/mapdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streammethods/streammethods.iml" filepath="$PROJECT_DIR$/streammethods/streammethods.iml" />
     </modules>
   </component>
 </project>
