@@ -16,7 +16,9 @@ public class Main {
         System.out.println(noDuplicate);
         vehicleList.stream().distinct().forEach(vehicle-> System.out.println(vehicle));
 
-//        using count method
+//        using count method to count how many distinct vehicles
+        long count=vehicleList.stream().distinct().count();
+        System.out.println(count);
 
     }
 }
