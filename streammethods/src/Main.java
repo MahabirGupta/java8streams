@@ -20,5 +20,9 @@ public class Main {
         long count=vehicleList.stream().distinct().count();
         System.out.println(count);
 
+//        use limit()
+        List<String> limitList = vehicleList.stream().limit(5).collect(Collectors.toList());
+        System.out.println(limitList);
+        vehicleList.stream().limit(5).forEach(vehicle-> System.out.println(vehicle));
     }
 }
