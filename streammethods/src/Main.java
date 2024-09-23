@@ -22,7 +22,7 @@ public class Main {
 
 //        use limit()
         List<String> limitList = vehicleList.stream().limit(5).collect(Collectors.toList());
-        System.out.println(limitList);
+        System.out.println("Limited Vehicles: "+limitList);
         vehicleList.stream().limit(5).forEach(vehicle-> System.out.println(vehicle));
     }
 }
