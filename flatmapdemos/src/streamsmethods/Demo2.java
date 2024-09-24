@@ -16,8 +16,12 @@ public class Demo2 {
         System.out.println(fruits);
 
 //        using anyMatch()
-       boolean results= fruits.stream().anyMatch(value -> {return value.startsWith("One");});
+       boolean results= fruits.stream().anyMatch(value -> {return value.startsWith("One");}); //check whether any element stars with "One"
         System.out.println(results); //true
+
+        //        using allMatch()
+        boolean results1= fruits.stream().allMatch(value -> {return value.startsWith("One");});//check whether all elements stars with "One"
+        System.out.println(results1); //false
 
 
 
