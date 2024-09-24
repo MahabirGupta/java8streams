@@ -9,5 +9,6 @@ public class Demo4 {
 //        using count to count the number of even numbers in the numberList
       long numOfEvenNumbers = numberList.stream().filter(num -> (num%2 == 0)).count();
         System.out.println("Number of even numbers = " + numOfEvenNumbers);
+
     }
 }
