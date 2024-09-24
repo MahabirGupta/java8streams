@@ -12,8 +12,19 @@ public class Demo {
 //        Using sorted() method to sort the integerList in ascending order
       List<Integer> newIntegerList = integerList.stream().sorted().collect(Collectors.toList()); //Sorting ascending order
         System.out.println(newIntegerList);
-//        Using sorted(Comparator.reverseOrder()) method to sort the integerList in decending order
+
+//        Using sorted(Comparator.reverseOrder()) method to sort the integerList in descending order
         List<Integer> newIntegerList1 = integerList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()); //Sorting ascending order
         System.out.println(newIntegerList1);
+
+//        Using sorted() method to sort the stringList in ascending order
+        List<String> stringList = Arrays.asList("Mahabir","Anish","Gauri","Babita","Anishkaa","Champa");
+        List<String> arrangedStringList = stringList.stream().sorted().collect(Collectors.toList());
+        System.out.println(arrangedStringList);
+
+        //        Using sorted() method to sort the stringList in descending order
+
+        List<String> arrangedStringList1 = stringList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        System.out.println(arrangedStringList1);
     }
 }
