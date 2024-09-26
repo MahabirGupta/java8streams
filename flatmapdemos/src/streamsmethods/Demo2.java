@@ -16,13 +16,16 @@ public class Demo2 {
         System.out.println(fruits);
 
 //        using anyMatch()
-       boolean results= fruits.stream().anyMatch(value -> {return value.startsWith("One");}); //check whether any element stars with "One"
+       boolean results= fruits.stream().anyMatch(value -> {return value.startsWith("One");}); //check whether any element starts with "One"
         System.out.println(results); //true
 
         //        using allMatch()
-        boolean results1= fruits.stream().allMatch(value -> {return value.startsWith("One");});//check whether all elements stars with "One"
+        boolean results1= fruits.stream().allMatch(value -> {return value.startsWith("One");});//check whether all elements start with "One"
         System.out.println(results1); //false
 
+        //        using noneMatch()
+         results1= fruits.stream().noneMatch(value -> {return value.startsWith("One");});//check whether none of the elements starts with "One"
+        System.out.println(results1); //false
 
 
     }
