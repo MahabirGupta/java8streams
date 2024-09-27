@@ -66,5 +66,9 @@ public class ParallelStreamsDemo {
         // using parallel stream
         studentList.parallelStream().filter(studentScore -> studentScore.getScore()>=80).limit(2).forEach(student -> System.out.println(student.getName() + " " + student.getScore()));
 
+//        convert sequential(normal) stream to parallel stream using parallel() method
+        studentList.stream().parallel().filter(studentScore -> studentScore.getScore()>=80).limit(2).forEach(student -> System.out.println(student.getName() + " " + student.getScore()));
+
+
     }
 }
